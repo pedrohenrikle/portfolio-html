@@ -1,0 +1,541 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    background-color: var(--body-bg-color);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    max-height: 1767px;
+}
+
+/* ----- Side Bar ----- */
+
+aside {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/* -- Profile / Photo -- */
+
+.profile {
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-cards);
+    width: 348px;
+    height: 292px;
+    border-radius: 20px;
+}
+
+.photo {
+    display: absolute;
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    border: 2px solid lightcoral;
+    margin-top: 36px;
+
+}
+
+.profile h4 {
+    text-align: center;
+    padding-top: 25px;
+    width: 270px;
+    height: 26px;
+    font-family: 'Merriweather Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 29px;
+    color: var(--text-color);
+    opacity: 0.91;
+}
+
+.profile h5 {
+    text-align: center;
+    color: var(--text-color);
+    width: 128px;
+    height: 17px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 45px;
+    opacity: 0.91;
+}
+
+/* -- End of Profile -- */
+
+/* -- Links -- */
+
+.links {
+    display: flex;
+    width: 348px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 34px 40px; 
+}
+
+ul.linkul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.linkul li {
+    /* height: 50px; */
+        padding-bottom: 20px;
+}
+
+ul.linkul li:last-child {
+    padding-bottom: 0px;
+}
+
+ul.linkul li a {
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+}
+
+
+ul li a p.linkp {
+    padding-left: 20px;
+    line-height: 16.34px;
+}
+
+a:visited,  a:link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--bg-techs);
+}
+
+/* -- End of Links -- */
+
+/* -- Tecnologies -- */
+
+.techs{
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    margin-top: 26px;
+    margin-left: 40px;
+}
+
+.techs h4 {
+    width: 121px;
+    height: 26px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--text-color);
+    opacity: 0.91;
+    padding-top: 34px;
+    padding-left: 20px;
+}
+
+.techs ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    padding: 50px 30px 30px 30px;
+}
+
+.cardtech {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-techs);
+    border-radius: 30px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    align-content: center;
+    
+}
+
+.cardtech p {
+    width: 86px;
+    height: 11px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: black;
+}
+
+/* -- End of Tecnologies -- */
+
+/* -- Experience -- */
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    background-color: var(--bg-cards);
+    margin-left: 40px;
+    margin-top: 34px;
+    border-radius: 20px;
+}
+
+.exp h4 {
+    padding: 30px 0px 0px 20px;
+    font-family: 'Merriweather Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-color);
+    opacity: 0.91;
+}
+
+.exp ul {
+    color: var(--text-color);
+    padding: 20px 0px 0px 65px;
+}
+
+
+.exp ul li {
+    /* list-style-position: inside; */
+    line-height: 15px;
+    padding-bottom: 20px;
+}
+
+
+.exp ul li h2 {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.exp ul li p {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.exp ul li p.subtitle {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* -- End of Experience -- */
+
+/* -- Education -- */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    background-color: var(--bg-cards);
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.education h4 {
+    padding: 30px 0px 0px 20px;
+    font-family: 'Merriweather Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-color);
+    opacity: 0.91;
+}
+
+.education ul {
+    color: var(--text-color);
+    padding: 20px 0px 0px 65px;
+}
+
+
+.education ul li {
+    /* list-style-position: inside; */
+    line-height: 15px;
+    padding-bottom: 20px;
+}
+
+
+.education ul li h2 {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.education ul li p {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.education ul li p.subtitle {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* -- End of Education -- */
+
+/* ----- Main app / Projects ----- */
+
+main {
+    display: flex;
+    justify-content: left;
+    background-color: var(--body-bg-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    flex-wrap: wrap;
+}
+
+.myprojects {
+    background-color: var(--bg-cards);
+    display: flex;
+    width: 100%;
+    height: 86px;
+    border-radius: 20px;
+    margin: 40px 40px 0px 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.myprojects p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.myprojects p.title {
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.myprojects a:visited,  a:link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.myprojects a:hover {
+    color: var(--bg-techs);
+}
+
+a.seeall:hover {
+    color:var(--text-color);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectone {
+    background-color: var(--bg-cards);
+    width: 50%;
+    /* height: 186px; */
+    margin-top: 31px;
+    margin-left: 61px;
+    margin-right: 15px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+a.linkprojone {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a.linkprojone img {
+    padding-right: 16px;
+}
+
+.projects p.text {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bottompost {
+    display: inline;
+}
+
+button {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    padding-top: 47px;
+}
+
+.buttons button.but {
+    display: relative;
+    background-color: var(--bg-cards);
+    border-color: var(--bg-cards);
+    border-width: 0px;
+    border-image: none;
+    align-content: center;
+}
+
+.buttons button p {
+    padding-left: 8px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.buttons button.right {
+    padding-left: 16px;
+}
+
+.language {
+    width: 100%;
+    align-items: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 100%;
+    border: 2px solid var(--text-color);
+    width: 15px;
+    height: 15px;
+    background-color: #E7DE79;
+    display: flex;
+    margin-right: 8px;
+}
+
+.buttons div.language p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.projecttwo {
+    background-color: var(--bg-cards);
+    width: 50%;
+    /* height: 186px; */
+    margin-top: 31px;
+    margin-left: 30px;
+    margin-right: 40px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* ----- End of Main App / Projects ----- */
+
+
+/* ----- Posts / Section ----- */
+
+section {
+    background-color: var(--body-bg-color);
+    width: 100%;
+}
+
+.post {
+    background-color: var(--bg-cards);
+    display: flex;
+    height: 86px;
+    border-radius: 20px;
+    margin: 30px 40px 30px 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.post p.title {
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.post a:visited,  a:link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.post a:hover {
+    color: var(--bg-techs);
+}
+
+.newpost {
+    background-color: var(--bg-cards);
+    display: flex;
+    margin:30px 40px 30px 60px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 30px;
+}
+
+.newpost img {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.newpost .text {
+    color: var(--text-color);
+}
+
+.newpost .text h4 {
+    margin-top: 28px;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.newpost .text h3.title {
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.hashtags {
+    display: flex;
+}
+
+.hashtags p {
+    padding-right: 30px;
+}
